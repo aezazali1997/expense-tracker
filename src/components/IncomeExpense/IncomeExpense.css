@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+    
+}
+.wrapper-sub{
+background-color: white;
+   padding: 1rem 2rem;
+   box-shadow:1px 1px 8px -3px black}  
+h1{
+  margin: 0;
+}
+.income, .expense{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.income{
+  color: rgb(44, 134, 44);
+}
+.expense{
+  color: brown;
+}
