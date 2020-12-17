@@ -11,7 +11,7 @@ const Addnewtransaction = () => {
 				<h5>Transaction amount</h5>
 				<input type="text" />
 			</div>
-			<a href="#">Add Transaction</a>
+			<a>Add Transaction</a>
 		</div>
 	);
 };
