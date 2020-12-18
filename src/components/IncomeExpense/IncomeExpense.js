@@ -5,7 +5,7 @@ const IncomeExpense = () => {
 	const { transactions } = useContext(GlobalContext);
 	let income = 0,
 		expense = 0;
-	transactions.map((transaction) => {
+	transactions.forEach((transaction) => {
 		if (transaction.transaction > 0) {
 			income += parseInt(transaction.transaction);
 		} else {
