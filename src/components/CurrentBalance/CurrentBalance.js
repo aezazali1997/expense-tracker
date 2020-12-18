@@ -4,7 +4,7 @@ import { GlobalContext } from "../context/Globalstate";
 const CurrentBalance = () => {
 	const { transactions } = useContext(GlobalContext);
 	let total = 0;
-	transactions.map((transaction) => {
+	let arr = transactions.map((transaction) => {
 		total += parseInt(transaction.transaction);
 	});
 
