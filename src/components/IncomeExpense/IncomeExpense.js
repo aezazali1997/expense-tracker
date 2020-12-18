@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/Globalstate";
 import "./IncomeExpense.css";
 const IncomeExpense = () => {
+	const { transactions } = useContext(GlobalContext);
+	let income = 0,
+		expense = 0;
+	transactions.map((transaction) => {
+		if (transaction.transaction > 0) {
+			income += parseInt(transaction.transaction);
+		} else {
+			expense -= parseInt(transaction.transaction);
+		}
+	});
 	return (
 		<div className="wrapper">
 			<div className="wrapper-sub">
 				<h1>Income</h1>
-				<span className="income">0.00</span>
+				<span className="income">{income}.00</span>
 			</div>
 			<div className="wrapper-sub">
 				<h1>Expense</h1>
-				<span className="expense">0.00</span>
+				<span className="expense">{expense}.00</span>
 			</div>
 		</div>
 	);

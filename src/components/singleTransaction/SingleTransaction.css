@@ -1,0 +1,36 @@
+.single-transaction{
+  background-color: white;
+  width: 20rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  padding: .6rem;
+}
+.single-transaction:hover{
+  color: white;
+}
+.border-income{
+  border-right: 5px solid rgb(44, 134, 44);
+}
+.border-expense{
+  border-right: 5px solid brown;
+}
+.border-expense:hover{
+  background-color: brown;
+}
+.border-income:hover{
+  background-color: rgb(44, 134, 44) ;
+}
+button{
+  border: 0;
+  background-color: transparent;
+  margin-left: 10px;
+  color: white;
+  display: none;
+}
+.single-transaction:hover button{
+  color: white;
+  font-weight: 600;
+  background-color: rgb(184, 184, 184);
+  display: inline-block;
+}
