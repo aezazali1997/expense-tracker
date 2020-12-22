@@ -5,13 +5,14 @@ import { GlobalContext } from "../context/Globalstate";
 const Addnewtransaction = () => {
 	const { transactions, addTransaction } = useContext(GlobalContext);
 	const [description, setDescription] = useState("");
-	const [transaction, setTransaction] = useState(0);
+	const [transaction, setTransaction] = useState();
 	return (
 		<div>
 			<h4 className="trans-title underline">Add new transaction</h4>
 			<div className="new-trans-container">
 				<h5>Description</h5>
 				<input
+				 placeholder="Details"
 					type="text"
 					id="Description"
 					value={description}
@@ -20,6 +21,7 @@ const Addnewtransaction = () => {
 				/>
 				<h5>Transaction amount</h5>
 				<input
+						placeholder="Amount"
 					type="number"
 					id="transactionamount"
 					value={transaction}
@@ -27,8 +29,9 @@ const Addnewtransaction = () => {
 					required="required"
 				/>
 			</div>
-			<button
-				className="add-tranaction"
+			<input type="button"
+			className="input-btn"
+			value="Add Transaction"
 				onClick={() => {
 					addTransaction({
 						id: transactions.length + 1,
@@ -36,9 +39,8 @@ const Addnewtransaction = () => {
 						transaction,
 					});
 				}}
-			>
-				Add Transaction
-			</button>
+			 />
+							
 		</div>
 	);
 };

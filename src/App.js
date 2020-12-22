@@ -8,6 +8,7 @@ import GlobalProvider from "./components/context/Globalstate";
 
 function App() {
 	return (
+		<div className="main">
 		<GlobalProvider>
 			<div className="container center-it">
 				<Header />
@@ -17,6 +18,7 @@ function App() {
 				<Addnewtransaction />
 			</div>
 		</GlobalProvider>
+		</div>
 	);
 }
 

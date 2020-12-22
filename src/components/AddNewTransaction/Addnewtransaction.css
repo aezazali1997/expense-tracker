@@ -18,17 +18,19 @@ input{
   padding: .7rem;
   font-size: 1rem;
 }
-.add-tranaction{
-  background-color: rgb(74, 127, 170);
-  margin: .51rem 0;
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: .81rem 0;
+.input-btn{
+  margin-top: 2rem;
   width: 20rem;
-  border-radius: 5px;
-  font-size: medium;
-  font-weight: 600;
-  color: white;
-  border: none;
+    box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+    height: 3rem;
+    background: #dde1e7;
+    font-weight: bold;
+}
+input{
+  border-radius: 2rem;
+  border: 0;
+  outline: 0;
+  box-shadow: inset 2px 2px 4px #babecc,
+                inset -2px -2px 4px #ffffff73;
+  padding: 10px 25px ;
 }
