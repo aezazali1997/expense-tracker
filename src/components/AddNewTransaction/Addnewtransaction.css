@@ -26,6 +26,10 @@ input{
     background: #dde1e7;
     font-weight: bold;
 }
+.input-btn:active{
+box-shadow: inset -5px -5px 10px #ffffff73,inset 2px 2px 5px #babecc ;
+
+}
 input{
   border-radius: 2rem;
   border: 0;
